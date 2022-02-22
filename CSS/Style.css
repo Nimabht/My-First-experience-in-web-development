@@ -1,12 +1,14 @@
-html {
-  font-size: 62.5%;
-}
+/* Color palatte*/
 :root {
   --color-accent: #ff3400;
   --color-body: #938da7;
   --color-headings: #1c0760;
   --color-primary: #2584ff;
   --color-secondary: #00d9ff;
+}
+/*Typography*/
+html {
+  font-size: 62.5%;
 }
 body {
   color: var(--color-body);
@@ -45,5 +47,27 @@ p {
   }
   h3 {
     font-size: 2.4rem;
+  }
+}
+/*Links*/
+a {
+  text-decoration: none;
+}
+.arrowLink {
+  color: var(--color-accent);
+  font-size: 2rem;
+  font-weight: bold;
+}
+.arrowLink::after {
+  content: "-->";
+  margin-left: 2px;
+  transition: margin 0.2s;
+}
+.arrowLink:hover::after {
+  margin-left: 7px;
+}
+@media screen and (min-width: 1024px) {
+  .arrowLink {
+    font-size: 1.5rem;
   }
 }
