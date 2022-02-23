@@ -1,3 +1,10 @@
+*,
+*::after,
+*::before {
+  /*TODO:
+  in kar baes mishe ke element haii mesl <a> border box shvand va az safhe birun nazanan vaghti width an ha 100% ast.*/
+  box-sizing: border-box;
+}
 /* Color palatte*/
 :root {
   --color-accent: #ff3400;
@@ -127,9 +134,15 @@ a {
   height: 40px;
 }
 .icon--primary {
+  /*TODO:
+   baraye rang kardan icon ha
+  */
   fill: var(--color-primary);
 }
 .icon-container {
+  /*TODO:
+   gharar dadane yek icon dar dayere (vasatesh)
+  */
   background: #f3f9fa;
   width: 64px;
   height: 64px;
@@ -137,4 +150,63 @@ a {
   display: inline-flex;
   justify-content: center;
   align-items: center;
+}
+/*Buttons*/
+.button {
+  border: none;
+  text-align: center;
+  border-radius: 999px;
+  font-size: 1.8rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  margin: 1rem 0;
+  /*TODO:
+   baes mishe ke margin haye 2 ta element tuye ham collapse nasahn
+  */
+  white-space: nowrap;
+  /*TODO:
+   vase inke vaghti text ziadi bashe be khate paiini nare
+  */
+  cursor: pointer;
+  padding: 2rem 3rem;
+  text-align: center;
+}
+.button--primary {
+  background-color: var(--color-headings);
+  color: white;
+}
+.button--primary:hover {
+  background-color: #4424af;
+}
+.button--secondary {
+  background-color: var(--color-secondary);
+  color: white;
+}
+.button--secondary:hover {
+  background-color: #36d1ec;
+}
+.button--accent {
+  background-color: var(--color-accent);
+  color: white;
+}
+.button--accent:hover {
+  background-color: #c94a2b;
+}
+.button--outline {
+  background-color: white;
+  color: var(--color-headings);
+  border: 2px solid var(--color-headings);
+}
+.button--outline:hover {
+  background-color: var(--color-headings);
+  color: white;
+}
+.button--blcok {
+  display: inline-block;
+  width: 100%;
+}
+@media screen and (min-width: 1024px) {
+  .button {
+    font-size: 1.5rem;
+  }
 }
