@@ -210,3 +210,36 @@ a {
     font-size: 1.5rem;
   }
 }
+/*Input*/
+.input {
+  border-radius: 9999px;
+  border: none;
+  color: var(--color-headings);
+  font-size: 2rem;
+  outline: none;
+  padding: 1.5rem 3.5rem;
+  border: 1px solid rgb(219, 218, 218);
+}
+::placeholder {
+  color: #d1d0d6;
+}
+.input-group {
+  border-radius: 999px;
+  border: 1px solid rgb(219, 218, 218);
+  display: flex;
+}
+.input-group .input {
+  border: none;
+  /*TODO:
+  Beas mishe ke sokme search bere tahe block div;*/
+  flex-grow: 1;
+  padding: 1.5rem 1rem;
+}
+.input-group .button {
+  margin: 3px 3px 3px 0;
+}
+@media screen and (min-width: 1024px) {
+  .input {
+    font-size: 1.5rem;
+  }
+}
