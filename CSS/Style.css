@@ -243,3 +243,23 @@ a {
     font-size: 1.5rem;
   }
 }
+/*Cards*/
+.card {
+  box-shadow: 0 0 10px 20px #f3f3f3;
+  border-radius: 7px;
+  /*TODO:
+  overflow hidden mishe chun border in style ruye border haye asli over flow mishe va bedun radius has*/
+  overflow: hidden;
+}
+.card__header,
+.card__body {
+  padding: 2rem 3rem;
+}
+.card--primary .card__header {
+  background-color: var(--color-primary);
+  color: white;
+}
+.card--secondary .card__header {
+  background-color: var(--color-secondary);
+  color: white;
+}
