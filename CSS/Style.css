@@ -135,11 +135,18 @@ a {
   width: 40px;
   height: 40px;
 }
+.icon--small {
+  width: 30px;
+  height: 30px;
+}
 .icon--primary {
   /*TODO:
    baraye rang kardan icon ha
   */
   fill: var(--color-primary);
+}
+.icon--white {
+  fill: white;
 }
 .icon-container {
   /*TODO:
@@ -152,6 +159,9 @@ a {
   display: inline-flex;
   justify-content: center;
   align-items: center;
+}
+.icon-container__accent {
+  background-color: var(--color-accent);
 }
 /*Buttons*/
 .button {
@@ -383,5 +393,29 @@ a {
 @media screen and (min-width: 1024px) {
   .grid--1x3 {
     grid-template-columns: repeat(3, 1fr);
+  }
+}
+/*Testimonial*/
+.testimonial {
+  padding: 2rem;
+}
+.testimonial__image {
+  position: relative;
+}
+.testimonial__image > .icon-container {
+  position: absolute;
+  top: 3rem;
+  right: -32px;
+}
+.tetimonial__image > img {
+  width: 100%;
+}
+@media screen and (min-width: 768px) {
+  .testimonial .quote,
+  .testimonial .quote__author {
+    font-size: 2.4rem;
+  }
+  .testimonial .quote {
+    margin-left: 6rem;
   }
 }
