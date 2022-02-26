@@ -456,3 +456,31 @@ a {
     margin: 0 2rem;
   }
 }
+/*Colapsible*/
+.collapsible__header {
+  display: flex;
+  justify-content: space-between;
+}
+.collapsible__header h2 {
+  margin-top: 0;
+  font-size: 3rem;
+}
+.collapsible__chevron {
+  transform: rotate(-90deg);
+  transition: 0.3s;
+}
+.collapsible__content {
+  /*TODO:
+  tafavot height ba max heigh dar in as ke 100vh height kole page ra migirad vali max heigh 100% az container khod ra migirad*/
+  max-height: 0;
+  overflow: hidden;
+  opacity: 0;
+  transition: all 0.3s;
+}
+.collapsible--expanded .collapsible__chevron {
+  transform: rotate(0);
+}
+.collapsible--expanded .collapsible__content {
+  max-height: 100vh;
+  opacity: 1;
+}
