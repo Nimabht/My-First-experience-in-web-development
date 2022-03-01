@@ -289,6 +289,9 @@ a {
   color: white;
 }
 /*Plans*/
+.plan {
+  transition: transform 0.2s;
+}
 .plan__name {
   color: white;
   margin: 0;
@@ -299,7 +302,7 @@ a {
   font-size: 5rem;
 }
 .plan__billing-cycle {
-  color: #ffffff5e;
+  color: #ffffffd3;
   font-size: 2rem;
   margin-right: 1rem;
 }
@@ -318,6 +321,7 @@ a {
 .plan .list__item {
   margin-bottom: 2rem;
 }
+
 .plan--popular .card__header {
   position: relative;
 }
@@ -329,6 +333,12 @@ a {
   top: -21px;
   right: 2%;
 }
+.plan:hover {
+  transform: scale(1.05);
+}
+.plan--popular:hover {
+  transform: scale(1.15);
+}
 @media screen and (min-width: 1024px) {
   .plan__name {
     font-size: 1.4rem;
@@ -338,6 +348,9 @@ a {
   }
   .plan__billing-cycle {
     font-size: 1.6rem;
+  }
+  .plan--popular {
+    transform: scale(1.1);
   }
 }
 /*Media*/
@@ -613,4 +626,38 @@ a {
     grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
   }
 }
-/*Plans*/
+/*myplancss
+.plan--cards {
+  margin: 5rem 3rem;
+}
+.card__plan {
+  max-width: 500px;
+  margin: 5rem auto;
+  transition: all 0.3s;
+}
+.plan {
+  padding: 0 1rem;
+}
+.card__plan.card--secondary:hover {
+  transform: scale(1.05);
+}
+.card__plan.card--primary:hover {
+  transform: scale(1.2);
+}
+@media screen and (min-width: 1024px) {
+  .card__plan {
+    margin: 5rem 2rem;
+  }
+  .card__plan.card--primary {
+    transform: scale(1.1);
+  }
+}
+*/
+/*Plans Block*/
+.block-plans .grid {
+  gap: 8rem 4rem;
+}
+.block-plans .card {
+  max-width: 500px;
+  margin: 0 auto;
+}
