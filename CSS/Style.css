@@ -6,7 +6,8 @@
   box-sizing: border-box;
 }
 .container {
-  width: 1140px;
+  max-width: 1140px;
+  margin: 0 auto;
 }
 /* Color palatte*/
 :root {
@@ -18,7 +19,7 @@
   --color-body-darker: #5c5577;
 }
 /*Typography*/
-::selection {s
+::selection {
   background: var(--color-primary);
   color: #fff;
 }
@@ -416,7 +417,7 @@ a {
 .grid {
   display: grid;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1024px) {
   .grid--1x2 {
     grid-template-columns: 1fr 1fr;
   }
@@ -515,6 +516,7 @@ a {
 .block {
   --padding-vertical: 6rem;
   padding: var(--padding-vertical) 2rem;
+  margin-bottom: 4rem;
 }
 .block__header {
   text-align: center;
