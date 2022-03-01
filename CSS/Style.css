@@ -5,7 +5,7 @@
   in kar baes mishe ke element haii mesl <a> border box shvand va az safhe birun nazanan vaghti width an ha 100% ast.*/
   box-sizing: border-box;
 }
-.container--1140 {
+.container {
   width: 1140px;
 }
 /* Color palatte*/
@@ -660,4 +660,23 @@ a {
 .block-plans .card {
   max-width: 500px;
   margin: 0 auto;
+}
+/*Features Block*/
+.features {
+  gap: 4rem 2rem;
+  margin: 12rem 0;
+}
+.features:first-of-type {
+  margin-top: 6rem;
+}
+.features__descriptions h3 {
+  margin-top: 1rem;
+}
+.features__image {
+  width: 100%;
+}
+@media screen and (min-width: 768px) {
+  .features:nth-of-type(even) .features__descriptions {
+    order: 2;
+  }
 }
