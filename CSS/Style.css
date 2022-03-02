@@ -9,6 +9,17 @@
   max-width: 1140px;
   margin: 0 auto;
 }
+.containerr {
+  position: relative;
+  top: 6rem;
+  width: 90%;
+  margin: auto;
+}
+@media screen and (max-width: 768px) {
+  .containerr {
+    top: -4.5rem;
+  }
+}
 /* Color palatte*/
 :root {
   --color-accent: #ff3400;
@@ -189,7 +200,7 @@ a {
    vase inke vaghti text ziadi bashe be khate paiini nare
   */
   cursor: pointer;
-  padding: 2rem 3rem;
+  padding: 2rem 4vw;
   text-align: center;
 }
 .button--primary {
@@ -265,6 +276,7 @@ a {
   Beas mishe ke sokme search bere tahe block div;*/
   flex-grow: 1;
   padding: 1.5rem 2rem;
+  width: 0;
 }
 .input-group .button {
   margin: 3px 3px 3px 0;
@@ -511,7 +523,7 @@ a {
 .collapsible--expanded .collapsible__content {
   max-height: 100vh;
   opacity: 1;
-  margin-top: -2rem;
+  margin-top: 0;
 }
 /*Blocks*/
 .block {
@@ -552,9 +564,8 @@ a {
   margin: 0;
 }
 .nav__item {
-  padding: 0.5 2rem;
   border-bottom: 1px solid rgba(128, 128, 128, 0.233);
-  padding: 0 2rem;
+  padding: 1rem 2rem;
 }
 .nav__item a {
   color: #d2d0db;
@@ -589,6 +600,7 @@ a {
   }
   .nav__item {
     border: 0;
+    padding: 0 2rem;
   }
 }
 /*Hero*/
@@ -620,7 +632,7 @@ a {
 }
 .block-domain__prices {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
   grid-template-rows: 6rem 6rem;
   justify-items: center;
   align-items: center;
@@ -628,6 +640,7 @@ a {
   font-weight: 600;
   max-width: 700px;
   margin: 0 auto;
+  color: var(--color-headings);
 }
 @media screen and (min-width: 768px) {
   .block-domain__prices {
